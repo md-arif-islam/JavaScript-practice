@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      #my-form {
+        background: #ccc;
+        padding: 4rem;
+      }
+      label {
+        display: block;
+        padding: 10px 0;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      #btn {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JS Crash Course</h1>
+    </header>
+
+    <div class="container">
+      <form action="" id="my-form">
+        <h1>Add User</h1>
+        <div id="msg" style="background: red;"></div>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+        </div>
+        <input type="submit" value="Submit" id="btn" />
+      </form>
+    </div>
+    <ul id="users"></ul>
+    <script src="main.js"></script>
+  </body>
+</html>
